@@ -18,6 +18,9 @@ python3 -m pip install --user --upgrade pip numpy GL PyGlut PyOpenGL
 python3 -m pip install --upgrade pyplasm
 ```
 
+Important for Big Sur users: there is a problem with PyOpenGL.So you will need to do as explained 
+here [a link](https://stackoverflow.com/questions/63475461/unable-to-import-opengl-gl-in-python-on-macos)
+
 <!--
 DISABLED: problems on github actions
 
@@ -36,7 +39,27 @@ Then test it:
 python3 -c "from pyplasm import *; VIEW(CUBOID([1,1,1]))"
 ```
 
+## Examples
 
+```
+[OK] resources\examples\arm2d.py
+[OK] resources\examples\ashtray.py
+[OK] resources\examples\ballorganizer.py
+[OK] resources\examples\basic.py
+[OK] resources\examples\batch.py
+[OK] resources\examples\bsp.py
+[OK] resources\examples\colors.py
+[OK] resources\examples\graph.py
+[OK] resources\examples\lathering.py
+[OK] resources\examples\load_obj.py
+[OK] resources\examples\pisa.py
+[OK] resources\examples\plasm.py
+[OK] resources\examples\rotational_solid.py
+[OK] resources\examples\temple.py
+[OK] resources\examples\threecubes.py
+
+[BROKEN] resources\examples\manipulator.py (but not important, belongs to a different object)
+```
 
 <!--
 ////////////////////////////////////////////////////////////////////////
